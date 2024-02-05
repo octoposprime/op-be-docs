@@ -26,6 +26,8 @@ docker network create op
 
 // Run Postgres
 docker run -d --expose 5432 -p 5432:5432 --network op --name postgres -e POSTGRES_USER={POSTGRES_USERNAME} -e POSTGRES_PASSWORD={POSTGRES_PASSWORD} -e POSTGRES_DB=op postgres
+// You have to run this command
+// CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
 // Run Redis
 docker run -d --expose 6379 -p 6379:6379 --network op --name redis -e REDIS_PASSWORD={REDIS_PASSWORD} redis --requirepass "{REDIS_PASSWORD}"
