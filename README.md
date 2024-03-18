@@ -15,6 +15,7 @@ use github.com/octoposprime/op-be-graphql
 ```
 POSTGRES_USERNAME=op
 POSTGRES_PASSWORD=op
+POSTGRES_DATABASE=op
 JWT_SECRET_KEY=op
 REDIS_PASSWORD=op
 ```
